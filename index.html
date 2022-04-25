@@ -8,13 +8,29 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira Code">
+    <style>
+      body {
+        font-family: "Fira Code", sans-serif;
+      }
+
+      #current{
+        border-bottom: 0.5rem; 
+        border-color: white; 
+        border-style: outset;
+      }
+
+      label{
+        font-size: larger;
+      }
+    </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-sm" style="background-color: black;">
         <div class="container-fluid">
             <ul class="navbar-nav me-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html" style="color: white;">Home</a>
+              <li class="nav-item" >
+                <a class="nav-link" href="index.html" style="color: white;" id="current">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="projects.html" style="color: white;">My Projects</a>
@@ -28,59 +44,76 @@
             </ul>
         </div>
       </nav>
-      
-      <div class="container-fluid" style="margin-bottom: 30vh">
+
+      <div class="container" style="margin-bottom: 30vh;">
         <div class="row">
+          <div class="col-sm" style="margin-top: 30vh;">
+            <div style="font-size: 8vh;">
+              Hi,
+            </div>
+            <div style="font-size: 8vh;">
+              <div style="white-space: nowrap;">
+                I'm
+              </div>
+              <div style="display: inline; color: #007FFF ;">
+                Hamza Asaad
+              </div>
+            </div>
+            <div style="font-size: 6vh;">
+              Bachelor of Computer Science
+            </div>
+          </div>
           <div class="col-sm">
-            <figure>
-              <img src="./img/hamzaAsaad.jpeg" class="rounded-circle" alt="Cinque Terre" style="height: 60vh; margin-top: 10vh;">
-              <figcaption style="margin-left: 15vh; margin-top: 5vh; font-size: 5vh;">Hamza Asaad</figcaption>
-            </figure>
+              <img src="./img/hamzaAsaad.jpeg" class="rounded-circle" alt="Cinque Terre" style="height: 70vh; margin-top: 25vh; margin-left: 10vh;">
           </div>
-          <div class="col-sm" style="margin-top: 15vh;">
-            <h2>
-              Interests
-            </h2>
-            <table>
-              <tr>
-                <td>
-                  <img style="height: 20vh;" src="./img/ps5Controller.webp">
-                </td>
-                <td>
-                  <img style="height: 20vh;" src="./img/winter-hiking-abstract-concept-vector-illustration_335657-6341.webp">
-                </td>
-              </tr>
-            </table>
-          </div>
-          <div class="col-sm" style="margin-top: 15vh;">
-            <h2>Skills</h2>
-            <table>
-              <tr>
-                <td style="padding: 1vh;">
-                  <img style="height: 10vh;" src="./img/JS-LOGO.png">
-                </td>
-                <td style="padding: 1vh;">
-                  <img style="height: 10vh;" src="./img/React.jpeg">
-                </td>
-              </tr>
-              <tr>
-                <td style="padding: 1vh;">
-                  <img style="height: 10vh;" src="./img/1200px-Python-logo-notext.svg.png">
-                </td>
-                <td style="padding: 2vh;">
-                  <img style="height: 10vh;" src="./img/solidity.png">
-                </td>
-              </tr >
-              <tr>
-                <td style="padding: 1vh;">
-                  <img style="height: 10vh;" src="./img/Microsoft_Azure.svg.png">
-                </td>
-                <td style="padding: 2vh;">
-                  <img style="height: 10vh;" src="./img/logo.png">
-                </td>
-              </tr>
-            </table>
-          </div>
+        </div>
+      </div>
+      
+      <div class="container" style="margin-bottom: 30vh;">
+        <div class="row">
+            <div class="col-sm">
+              <h2 style="margin-bottom: 3vh;">
+                <b>Information</b>
+              </h2>
+              <h3>
+                Gender: Male
+              </h3>
+              <h3>
+                Date of Birth: 15/06/1999
+              </h3>
+              <h3>
+                Semester: 6th
+              </h3>
+              <br>
+
+              <h3>
+                Instructor: Akheem Yousaf
+              </h3>
+              <h3>
+                Class: CSCS342 Spring Section B
+              </h3>
+            </div>
+            <div class="col-sm">
+              <h2>
+                <b>Skills</b>
+              </h2>
+              <label>&nbspWeb App Development</label>
+              <div class="progress" style="margin: 10px;">
+                <div class="progress-bar" role="progressbar" style="width: 55%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <label>&nbspMobile App Development</label>
+              <div class="progress" style="margin: 10px;">
+                <div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <label>&nbspDeep Learning</label>
+              <div class="progress" style="margin: 10px;">
+                <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <label>&nbspBlockchain & Smart Contract Development</label> 
+              <div class="progress" style="margin: 10px;">
+                <div class="progress-bar" role="progressbar" style="width: 89%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
         </div>
       </div>
 
