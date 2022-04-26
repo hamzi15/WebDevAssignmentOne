@@ -23,6 +23,34 @@
       label{
         font-size: larger;
       }
+
+      .typewriter{
+        display: inline;
+        color: #007FFF;
+        font-size: 8vh;
+        overflow: hidden; /* Ensures the content is not revealed until the animation */
+        border-right: .15em solid #007FFF; /* The typwriter cursor */
+        white-space: nowrap; /* Keeps the content on a single line */
+        /* margin: 0 auto; Gives that scrolling effect as the typing happens */
+        letter-spacing: .10em; /* Adjust as needed */
+        animation: 
+          typing 2.5s steps(40, end),
+          blink-caret .75s step-end infinite;
+    }
+
+    /* The typing effect */
+    @keyframes typing {
+      from { width: 50% }
+      to { width: 100% }
+    }
+
+    /* The typewriter cursor effect */
+    @keyframes blink-caret {
+      from, to { border-color: transparent }
+      50% { border-color: #007FFF ; }
+    }
+
+
     </style>
 </head>
 <body>
@@ -49,17 +77,18 @@
         <div class="row">
           <div class="col-sm" style="margin-top: 30vh;">
             <div style="font-size: 8vh;">
-              Hi,
+              Hi, 
             </div>
             <div style="font-size: 8vh;">
               <span style="white-space: nowrap;">
                 I'm
               </span>
-              <span style="display: inline; color: #007FFF ;">
+              <!-- <span style="display: inline; color: #007FFF ;" class="typewriter">
                 Hamza Asaad
-              </span>
+              </span> -->
+              <h1 style="display: inline;" class="typewriter">Hamza Asaad</h1>
             </div>
-            <div style="font-size: 6vh;">
+            <div style="font-size: 6vh; padding-left: -100px;">
               Bachelor of Computer Science
             </div>
           </div>
@@ -85,13 +114,26 @@
                 Semester: 6th
               </h3>
               <br>
-
-              <h3>
-                Instructor: Akheem Yousaf
-              </h3>
-              <h3>
-                Class: CSCS342 Spring Section B
-              </h3>
+              <h2 style="margin-bottom: 3vh;">
+                <b>Interests</b>
+              </h2>
+              <ul style="font-size: x-large;">
+                <li>
+                  Hiking
+                </li>
+                <li>
+                  Video Games
+                </li>
+                <li>
+                  Formula 1
+                </li>
+                <li>
+                  Hackathons
+                </li>
+                <li>
+                  AI
+                </li>
+              </ul>
             </div>
             <div class="col-sm">
               <h2>
